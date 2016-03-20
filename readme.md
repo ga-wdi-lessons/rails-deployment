@@ -104,12 +104,16 @@ $ heroku config:set RAILS_ENV=production
 
 ## Deleting apps
 
+```sh
+$ heroku apps:delete --confirm my-sweet-app
+```
+
 You're likely to end up with a bunch of Heroku apps. To delete all of them at once, you can add this function to your `.bash_profile`:
 
 ```sh
 function happ(){
   for app in $(heroku apps)
-    do heroku apps:destroy --app $app --confirm $app
+    do heroku apps:delete --confirm $app
   done
 }
 ```
