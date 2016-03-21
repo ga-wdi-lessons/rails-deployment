@@ -57,6 +57,10 @@ We're going to use Heroku to deploy our app, because it has a "free" pricing tie
     - [Part 1](https://youtu.be/8NZsSxFSFLM)
     - [Part 2](https://youtu.be/EFDy2sAHFCw)
     - [Part 3](https://youtu.be/nx1gAA9tyog)
+  - WDI8
+    - [Part 1](https://youtu.be/7izx6kOOOGI)
+    - [Part 2](https://youtu.be/_LiJBimguak)
+    - [Part 3](https://youtu.be/ZGDVBwtsurk)
 
 # Cheat Sheet
 
