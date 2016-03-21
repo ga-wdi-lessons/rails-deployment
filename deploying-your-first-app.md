@@ -54,6 +54,12 @@ To actually deploy our code onto the new server, we simply push to this new remo
 $ git push heroku master
 ```
 
+> **Note** if you're trying to deploy from a branch other than master you want to use this syntax:
+
+```
+git push heroku <your-branch>:master
+```
+
 After doing this, you'll see a LOT of stuff printed out in your Terminal. You're watching Heroku run `bundle install` and run the commands necessary to set up a Rails app.
 
 ## Troubleshooting

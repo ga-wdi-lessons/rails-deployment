@@ -15,6 +15,16 @@ The most common pitfalls when deploying to Heroku are:
 Your app must include both the `rails_12factor` and `pg` gems if you are
 deploying to production.
 
+## Not Pushing From the Right branch
+
+When deploying your app via git to Heroku, by default Heroku looks for you to push from the `master` branch of your application.
+
+If you're trying to deploy from a branch other than master you want to use this syntax:
+
+```
+git push heroku <your-branch>:master
+```
+
 #### Make sure you create your app with `rails new my-app-name -d postgresql`.
 
 This includes the `pg` gem for you. If you forget the `-d postgresql`, Rails will default to using SQLite3 for your database. This saves data in a file called `development.sqlite3` in your app's `db` folder.
