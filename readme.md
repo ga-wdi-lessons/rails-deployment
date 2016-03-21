@@ -38,6 +38,8 @@ We'll take 5 minutes for discussion, and for much of the rest of this lesson, we
 
 ## [We Do: Deploying to Heroku](deploying-your-first-app.md) (30 / 80)
 
+We're going to use Heroku to deploy our app, because it has a "free" pricing tier, and is very easy to get started with.
+
 ## [I Skim: Common Errors](common-errors.md) (10 / 90)
 
 #### Questions?
@@ -65,9 +67,7 @@ The whole series of commands for deploying to Heroku is:
 Add to the bottom of your Gemfile:
 
 ```rb
-group :production do
-  gem 'rails_12factor'
-end
+gem "rails_12factor", group: :production
 ```
 
 ```bash

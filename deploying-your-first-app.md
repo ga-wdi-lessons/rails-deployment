@@ -1,14 +1,17 @@
 # Deploying Your First App
 
-Please clone [tunr_rails_users](https://github.com/ga-wdi-exercises/tunr_rails_users):
+Please do the following:
+
+1. Clone [tunr_rails_users](https://github.com/ga-wdi-exercises/tunr_rails_users)
+2. Check out the `5-added-associations` branch
+3. Check out a copy of that branch called `deploying`
 
 ```
 $ git clone git@github.com:ga-wdi-exercises/tunr_rails_users.git
-$ git checkout 5-added-assocations
+$ cd tunr_rails_users
+$ git checkout 5-added-associations
+$ git checkout -b deploying
 ```
-
-We're going to use Heroku to deploy our app, because it has a free tier, and is
-incredibly easy to get started with.
 
 ## Installing the Heroku Toolbelt
 
@@ -51,8 +54,12 @@ called `heroku`. This doesn't actually move your code anywhere -- it accomplishe
 To actually deploy our code onto the new server, we simply push to this new remote:
 
 ```bash
-$ git push heroku master
+$ git push heroku deploying:master
 ```
+
+This is saying, "Push my *local* branch called `deploying` to a *remote* Heroku branch called `master`."
+
+> If you were working in the master branch, you'd simply type `git push heroku master`
 
 After doing this, you'll see a LOT of stuff printed out in your Terminal. You're watching Heroku run `bundle install` and run the commands necessary to set up a Rails app.
 
@@ -68,7 +75,7 @@ remote:
 remote: !	Push rejected to tunr-rails-users.
 remote:
 To https://git.heroku.com/tunr-rails-users.git
- ! [remote rejected] 5-added-associations -> master (pre-receive hook declined)
+ ! [remote rejected] deploying -> master (pre-receive hook declined)
 ```
 
 This means your deployment failed!
@@ -105,15 +112,13 @@ remote:        (sass):55
 
 Include this snippet in your `Gemfile`:
 
-```
-group :production do
-  gem 'rails_12factor'
-end
+```rb
+gem "rails_12factor", group: :production
 ```
 
 ### 3) Push up to Heroku
 
-Now, `bundle install`, `add`, `commit`, and `git push heroku master` again. **Any time you make changes** and want them to go onto Heroku, you'll need to run `git push heroku master`.
+Now, `bundle install`, `add`, `commit`, and `git push heroku deploying:master` again. **Any time you make changes** and want them to go onto Heroku, you'll need to re-run this.
 
 ## Visiting Our Site
 
