@@ -17,25 +17,48 @@
 Deployment is the act of putting our app up on one or more servers connected to
 the internet, such that people can use our app.
 
-## [You Read: Rails Environments](about-environments.md) (10 min)
+## [I Teach: Rails Environments](about-environments.md) (10 / 10)
 
-## [You Read: Deployment](about-deployment.md) (10 min)
+#### Questions?
 
-## You Read: The Heroku Rails Guide (15 min)
+## [I Teach: Deployment](about-deployment.md) (10 / 20)
+
+#### Questions?
+
+## You Read: The Heroku Rails Guide (20 / 40)
 
 Take 10 minutes to pair up with a partner and skim the [Getting Started with
 Rails 4 on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4).
 
-We'll take 5 minutes for discussion, and for much of the rest of this lesson,
-we'll be walking through many of these steps.
+We'll take 5 minutes for discussion, and for much of the rest of this lesson, we'll be walking through many of these steps.
 
-## [You Do: Deploying to Heroku](deploying-your-first-app.md) (30 min)
+#### Questions?
 
-## [You Read: Common Errors](common-errors.md) (10 min)
+## Break! (10 / 50)
 
-## [Optional We Do: Rails Asset Pipeline](asset-pipeline.md) (30 min)
+## [We Do: Deploying to Heroku](deploying-your-first-app.md) (30 / 80)
 
-## Recap
+## [I Skim: Common Errors](common-errors.md) (10 / 90)
+
+#### Questions?
+
+# Resources
+- [Rails Asset Pipeline](asset-pipeline.md)
+- [Getting Started Deploying Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
+- [The Twelve-Factor App](http://12factor.net)
+  > You may be wondering about the name of that gem... it's based on an idea called
+  'The Twelve-Factor App', which is a set of 12 principles that modern apps should
+  follow so that they can be deployed on any provider, and can scale up easily
+  (i.e. can grow as the userbase grows).
+- Screencasts
+  - WDI7
+    - [Part 1](https://youtu.be/8NZsSxFSFLM)
+    - [Part 2](https://youtu.be/EFDy2sAHFCw)
+    - [Part 3](https://youtu.be/nx1gAA9tyog)
+
+# Cheat Sheet
+
+## Deployment Steps
 
 The whole series of commands for deploying to Heroku is:
 
@@ -66,7 +89,7 @@ Then, to view your app's server log:
 $ heroku logs -t
 ```
 
-## To change your app
+## To push changes to your app
 
 ```bash
 $ git add .
@@ -90,7 +113,7 @@ $ git push heroku master
 $ heroku run rake db:migrate
 ```
 
-## To switch your Heroku app over to development
+## To switch your Heroku app's environment to development
 
 ```bash
 $ heroku config:set RAILS_ENV=development
@@ -119,20 +142,3 @@ function happ(){
 ```
 
 ...and then run `happ` from anywhere on your computer.
-
-## Resources
-- [Getting Started Deploying Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
-- [The Twelve-Factor App](http://12factor.net)
-- Screencasts
-  - WDI7
-    - [Part 1](https://youtu.be/8NZsSxFSFLM)
-    - [Part 2](https://youtu.be/EFDy2sAHFCw)
-    - [Part 3](https://youtu.be/nx1gAA9tyog)
-- 12Factor: What is it?
-  > You may be wondering about the name of that gem... it's based on an idea called
-  'The Twelve-Factor App', which is a set of 12 principles that modern apps should
-  follow so that they can be deployed on any provider, and can scale up easily
-  (i.e. can grow as the userbase grows).
-
-  > We don't have time to go in-depth today, but you can find more info about this
-  idea on the [Twelve-Factor Site](http://12factor.net).
