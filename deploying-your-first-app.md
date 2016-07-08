@@ -1,5 +1,12 @@
 # Deploying Your First App
 
+## Important !!!
+
+If your rails app root directory is not the same as your git root directory,
+you will need to move the rails app up a directory:
+
+![](appception.gif)
+
 Please do the following:
 
 1. Clone [tunr_rails_users](https://github.com/ga-wdi-exercises/tunr_rails_users)
