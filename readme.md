@@ -25,22 +25,11 @@ the internet, such that people can use our app.
 
 #### Questions?
 
-## You Read: The Heroku Rails Guide (20 / 40)
-
-Take 10 minutes to pair up with a partner and skim the [Getting Started with
-Rails 4 on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4).
-
-We'll take 5 minutes for discussion, and for much of the rest of this lesson, we'll be walking through many of these steps.
-
-#### Questions?
-
-## Break! (10 / 50)
-
-## [We Do: Deploying to Heroku](deploying-your-first-app.md) (30 / 80)
+## [We Do: Deploying to Heroku](deploying-your-first-app.md) (30 / 50)
 
 We're going to use Heroku to deploy our app, because it has a "free" pricing tier, and is very easy to get started with.
 
-## [I Skim: Common Errors](common-errors.md) (10 / 90)
+## [I Skim: Common Errors](common-errors.md) (10 / 60)
 
 #### Questions?
 
