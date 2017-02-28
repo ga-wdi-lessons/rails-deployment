@@ -66,8 +66,8 @@ $ heroku create my-sweet-app
 # wait...
 $ git push heroku master
 # wait...
-$ heroku run rake db:migrate
-$ heroku run rake db:seed
+$ heroku run rails db:migrate
+$ heroku run rails db:seed
 $ heroku open
 ```
 
@@ -94,11 +94,11 @@ Do *not* edit an existing migration file. Instead:
 ```bash
 $ rails g migration yourMigrationName
 # Edit the new migration file
-$ rake db:migrate
+$ rails db:migrate
 $ git add .
 $ git commit -m "added migration"
 $ git push heroku master
-$ heroku run rake db:migrate
+$ heroku run rails db:migrate
 ```
 
 ## To switch your Heroku app's environment to development
