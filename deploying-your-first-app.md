@@ -55,7 +55,7 @@ After doing this, you'll see a lot of stuff printed out in your Terminal. You're
 
 ## Add the `rails_12factor` gem to your app
 
-[This gem](http://12factor.net/) helps manage your assets, and does some other things. (See the end of this lesson plan.) Not including it is a *very* common source of Heroku deployment errors.
+[This gem](http://12factor.net/) helps manage your assets, and does some other things. Not including it is a *very* common source of Heroku deployment errors.
 
 Include this snippet in your `Gemfile`:
 
