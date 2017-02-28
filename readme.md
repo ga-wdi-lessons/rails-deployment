@@ -17,30 +17,19 @@
 Deployment is the act of putting our app up on one or more servers connected to
 the internet, such that people can use our app.
 
-## [I Teach: Rails Environments](about-environments.md) (10 / 10)
+## [Read: Rails Environments](about-environments.md)
 
-#### Questions?
+## [Read: Deployment](about-deployment.md)
 
-## [I Teach: Deployment](about-deployment.md) (10 / 20)
-
-#### Questions?
-
-## [We Do: Deploying to Heroku](deploying-your-first-app.md) (30 / 50)
+## [You Do: Deploying to Heroku](deploying-your-first-app.md)
 
 We're going to use Heroku to deploy our app, because it has a "free" pricing tier, and is very easy to get started with.
 
-## [I Skim: Common Errors](common-errors.md) (10 / 60)
-
-#### Questions?
+## [Reference: Common Errors](common-errors.md)
 
 # Resources
 - [Rails Asset Pipeline](asset-pipeline.md)
 - [Getting Started Deploying Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
-- [The Twelve-Factor App](http://12factor.net)
-  > You may be wondering about the name of that gem... it's based on an idea called
-  'The Twelve-Factor App', which is a set of 12 principles that modern apps should
-  follow so that they can be deployed on any provider, and can scale up easily
-  (i.e. can grow as the userbase grows).
 - Screencasts
   - WDI7
     - [Part 1](https://youtu.be/8NZsSxFSFLM)
@@ -50,6 +39,12 @@ We're going to use Heroku to deploy our app, because it has a "free" pricing tie
     - [Part 1](https://youtu.be/7izx6kOOOGI)
     - [Part 2](https://youtu.be/_LiJBimguak)
     - [Part 3](https://youtu.be/ZGDVBwtsurk)
+  - [The Twelve-Factor App](http://12factor.net)
+
+  > You may be wondering about the name of that gem... it's based on an idea called
+  'The Twelve-Factor App', which is a set of 12 principles that modern apps should
+  follow so that they can be deployed on any provider, and can scale up easily
+  (i.e. can grow as the userbase grows).
 
 # Cheat Sheet
 
