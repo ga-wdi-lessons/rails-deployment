@@ -29,7 +29,7 @@ We're going to use Heroku to deploy our app, because it has a "free" pricing tie
 
 # Resources
 - [Rails Asset Pipeline](asset-pipeline.md)
-- [Getting Started Deploying Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
+- [Getting Started Deploying Rails on Heroku](ttps://devcenter.heroku.com/articles/getting-started-with-rails5)
 - [The Twelve-Factor App](http://12factor.net)
 - Screencasts
   - WDI7
