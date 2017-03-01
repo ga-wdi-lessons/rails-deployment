@@ -3,7 +3,7 @@
 The most common pitfalls when deploying to Heroku are:
 
 * not including the `rails_12factor` and `pg` gems
-* not running `heroku run rake db:migrate`
+* not running `heroku run rails db:migrate`
 * can't drop / reset your database
 * saving user-uploaded data to the filesystem (instead of a service like AWS S3)
 * checking in sensitive information into your public repository
@@ -27,16 +27,16 @@ If you did forget `-d postgresql`, it's totally fixable -- just Google for the s
 
 ## Not Running Migrations on Heroku
 
-Don't forget to run `heroku run rake db:migrate` after you include new
+Don't forget to run `heroku run rails db:migrate` after you include new
 migrations, or your app won't work correctly.
 
 ## Can't Drop / Reset Your Database
 
-On heroku, we can't run `heroku run rake db:drop`. Instead you need to run:
+On heroku, we can't run `heroku run rails db:drop`. Instead you need to run:
 
 ```bash
 $ heroku pg:reset DATABASE_URL
-$ heroku run rake db:migrate
+$ heroku run rails db:migrate
 ```
 
 ## Saving User Uploaded Data
