@@ -1,12 +1,5 @@
 # Deploying Your First App
 
-## Important
-
-If your rails app root directory is not the same as your git root directory,
-you will need to move the rails app up a directory:
-
-![](appception.gif)
-
 ## Installing the Heroku Toolbelt
 
 The Heroku toolbelt is a command line app that enables us to create new apps to
