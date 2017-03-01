@@ -2,7 +2,7 @@
 
 ## Installing the Heroku Toolbelt
 
-The Heroku toolbelt is a command line app that enables us to create new apps to
+The Heroku Toolbelt is a command line app that enables us to create new apps to
 deploy, deploy code updates, and manage our server(s).
 
 Follow the instructions on the
@@ -34,6 +34,16 @@ called `heroku`. This doesn't actually move your code anywhere -- it accomplishe
 
 > Note: If you type `heroku create` without a name afterward, it'll make up a name for you -- usually something goofy like `secure-wave-14641.herokuapp.com`. You can rename your app with `heroku apps:rename your-new-app-name`
 
+## Add the `rails_12factor` gem to your app
+
+[This gem](http://12factor.net/) helps manage your assets, and does some other things. Not including it is a *very* common source of Heroku deployment errors.
+
+Include this snippet in your `Gemfile`:
+
+```rb
+gem "rails_12factor", group: :production
+```
+
 ## Deploying the App
 
 To actually deploy our code onto the new server, we simply push to this new remote:
@@ -45,16 +55,6 @@ $ git push heroku master
 > If you would like to push from a different local branch, you would run `$ git push heroku other-branch-name:master`
 
 After doing this, you'll see a lot of stuff printed out in your Terminal. You're watching Heroku run `bundle install` and run the commands necessary to set up a Rails app.
-
-## Add the `rails_12factor` gem to your app
-
-[This gem](http://12factor.net/) helps manage your assets, and does some other things. Not including it is a *very* common source of Heroku deployment errors.
-
-Include this snippet in your `Gemfile`:
-
-```rb
-gem "rails_12factor", group: :production
-```
 
 ## Visiting Our Site
 
@@ -99,3 +99,5 @@ $ heroku logs             # print the most recent entries and quit
 $ heroku logs -n 2000     # print the 2000 most recent entries and quit
 $ heroku logs -t          # 'tail' - print the most recent entries and continue to print new ones until we quit using ctrl-c
 ```
+
+> You can also view the logs in the browser via Heroku's dashboard by visiting `https://dashboard.heroku.com/apps/your-app-name/logs`
