@@ -35,7 +35,7 @@ migrations, or your app won't work correctly.
 On heroku, we can't run `heroku run rails db:drop`. Instead you need to run:
 
 ```bash
-$ heroku pg:reset DATABASE_URL
+$ heroku pg:reset DATABASE
 $ heroku run rails db:migrate
 ```
 
