@@ -77,7 +77,7 @@ This says, "Push one specific branch to a specific *other* branch."
 
 ## Having your Rails app in the wrong folder
 
-If, on trying to push to Heroku, you get an error saying "No Cedar app detected" or something similar, double-check whether your directory looks like this:
+If, on trying to push to Heroku, you get an error saying "No Cedar app detected" or something similar, double-check whether your directory looks like this...
 
 ```
 wdi/
@@ -92,9 +92,13 @@ wdi/
       Gemfile.lock (and so on)
 ```
 
+
+
 If it does, the problem is that **your `.git` folder needs to be in the same folder as your Gemfile and the rest of your Rails app**.
 
-That is, your directory should look like this:
+The `Gemfile` is used by Heroku to detect a Ruby/Rails application and its dependencies.
+
+Your directory should look like the file tree below, with the `.git` file in the same directory with the `Gemfile`...
 
 ```
 wdi/
@@ -119,13 +123,13 @@ $ git commit -m "moved everything to root directory"
 
 **Note** that dotfiles (files beginning with `.`) aren't moved with this command. You'll need to move those individually.
 
-When you `git add`, there may be a TON of changes. This is because Git thinks you deleted a bunch of files, and then created a bunch of files. One way to mitigate this is to use the `git mv` command instead of just the `mv` command.
+When you `git add`, there may be a TON of changes reflected by `git status`. This is because Git thinks you deleted a bunch of files, and then created a bunch of files. One way to mitigate this is to use the `git mv` command instead of just the `mv` command.
 
 **If `git mv` doesn't work, however, just try `mv`.**
 
 Once you've added and committed, if you push back up to `heroku master`, all should be well.
 
-#### To avoid getting into this situation
+### Avoiding
 
 Whenever you type `rails new myapp -d postgresql`, it creates a new folder called `myapp` *inside* your current folder. This results in the situation above.
 
