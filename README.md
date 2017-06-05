@@ -62,8 +62,10 @@ Today, we'll be using a service called Heroku to deploy our apps, because it mak
 ## Quick References
 
   - ### [Common Errors](common-errors.md)
+    > Common Errors in Rails Deployments on Heroku
 
   - ### [Deployment Cheat Sheet](cheat-sheet.md)
+    > Quick reference for deploying a Rails App to Heroku
 
 ## Resources
   - [Rails Asset Pipeline](asset-pipeline.md)
