@@ -28,7 +28,7 @@ There are generally a few things we need for an app to be properly deployed:
 * **executed code** - we must get our code onto the server and run it
 * **configuration** - we must configure our running app with respect to its deployment environment
 
-### Many ways to deploy
+### Deployment Approaches
 
 There are lots of ways to do each of these steps. For example, we can get our code onto a server by...
 
@@ -43,21 +43,27 @@ Today, we'll be using a service called Heroku to deploy our apps, because it mak
   * starts up a new server when we run `heroku create`, and installs all the necessary services
   * adds a new remote to our git repo, so we can just run `git push heroku master` to copy our code over
   * detects our database
-  * automatically uses `bundle install` to install our app's dependancies, and starts our app.
+  * detects the language our program is written in and chooses a buildpack
+  * automatically uses `bundle install` to install our app's dependancies, and starts our app
+  * easily change configuration information using `heroku config`
 
-If we need to change configuration information, we can set configuration variables using `heroku config`, e.g.
+## [You Do: Read through Rails Environments](about-environments.md)
 
-## [Read: Rails Environments](about-environments.md)
+> Start by reading about environments. We've been using the `development` environment by default, now we'll look at other environments, particularly `production`.
 
-## [Read: Deployment](about-deployment.md)
+## [You Do: Read through Deployment](about-deployment.md)
+
+> What is deployment? What changes in an application when it is deployed?
 
 ## [You Do: Deploying to Heroku](deploying-your-first-app.md)
 
 > We'll use Heroku to deploy our app, since it has a "free" pricing tier, and a ton of nice features that simplify and expedite deployment.
 
-## [Reference: Common Errors](common-errors.md)
+## Quick References
 
-## [Reference: Deployment Cheat Sheet](cheat-sheet.md)
+  - ### [Common Errors](common-errors.md)
+
+  - ### [Deployment Cheat Sheet](cheat-sheet.md)
 
 ## Resources
   - [Rails Asset Pipeline](asset-pipeline.md)
