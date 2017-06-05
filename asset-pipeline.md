@@ -1,41 +1,38 @@
 # Rails Asset Pipeline
 
-### What is the asset pipeline?
+## What is the asset pipeline?
 
-The asset pipeline is a feature in rails to manage our assets:
+The asset pipeline is a feature in rails to manage our assets. These include things like...
 
-* stylesheets (CSS)
-* javascript (JS)
-* images
+  * stylesheets (CSS)
+  * javascript (JS)
+  * images, audio, video, or other media
 
-It is implemented using a gem called 'sprockets' that is built into rails.
+It is implemented using a gem called `sprockets` that is built into rails.
 
 You might have used it (if you put stuff in ```app/assets```).
 
 ### Exercise on Assets
 
-Take 15 minutes to do the following:
+Take 15 minutes to do the following...
 
-1. Copy an image file into your app/assets/images folder. Reference it in your
-views appropriately (using `image_tag`), and make sure you can see those
-images in dev and prod.
+1. Copy an image file into your app/assets/images folder. Reference it in your views appropriately (using `image_tag`), and make sure you can see those images in development and production.
 
-2. Add an additional stylesheet to your app (any name should work). Add at least
-one obvious style. Verify that it works in dev and prod.
+2. Add an additional stylesheet to your app (any name should work). Add at least one obvious style. Verify that it works in development and production.
 
-3. Using the web inspector, compare how assets are served in dev and prod.
+3. Using the web inspector, compare how assets are served in development and production.
 
 ### What does it do?
 
 Formerly in Rails (as in Sinatra), you simply served up images, css and javascript as flat files in the public directory.
 
-The asset pipeline can do any of the following (configurable):
+The asset pipeline can be configured to do any of the following:
 
-* concatenates CSS and JS
-* compresses/minifies CSS and JS
-* fingerprints file-names for caching purposes
-* pre-processes assets (so they can include ERB, or even SASS / CoffeeScript)
-* provides helper methods to reference assets
+  * concatenate CSS and JS
+  * compress/minify CSS and JS
+  * fingerprint file-names for caching purposes
+  * pre-process assets (so they can include ERB, or even SASS / CoffeeScript)
+  * provide helper methods to reference assets
 
 ### Why?
 
