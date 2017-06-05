@@ -60,6 +60,8 @@ You can also monitor the log file in your terminal session by passing the follow
  $ heroku logs -t
 ```
 
+> You can also view the logs in the browser via Heroku's dashboard by visiting `https://dashboard.heroku.com/apps/your-app-name/logs`
+
 ## Pushing Changes
 
 ```bash
