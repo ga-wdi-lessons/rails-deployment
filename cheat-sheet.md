@@ -6,7 +6,7 @@
   2. [Debugging](#debugging)
   3. [Pushing Changes](#pushing-changes)
   4. [Changing Migrations](#changing-steps)
-  5. [Switching Heroku Environments](#swithcing-heroku-environments)
+  5. [Switching Heroku Environments](#switching-heroku-environments)
   6. [Deleting Heroku Apps](#deleting-heroku-apps)
 
 ## Deployment Steps
