@@ -1,12 +1,14 @@
 # Deployment Cheat Sheet
 
+##
+
 1. After switching to the branch you'd like to deploy, create a new branch for deployment...
 
 ```bash
  $ git checkout -b deployment
 ```
 
-2. Add the following dependency to the bottom of your Gemfile...
+2. Add the following line to the bottom of your Gemfile to add the `rails_12factor` dependency to the `production` environment...
 
 ```rb
 gem "rails_12factor", group: :production

@@ -55,9 +55,9 @@ When we run `heroku create`, Heroku will automatically add a new git remote call
 
 ## Add the `rails_12factor` gem to your app
 
-[This gem](http://12factor.net/) helps manage your assets, and does some other things. Not including it is a *very* common source of Heroku deployment errors.
+Not including [this gem](http://12factor.net/) is a *very* common source of Heroku deployment errors.
 
-Include this snippet in your `Gemfile`...
+Include this line at the end of your `Gemfile`...
 
 ```rb
 gem "rails_12factor", group: :production
