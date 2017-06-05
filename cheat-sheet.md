@@ -1,8 +1,17 @@
 # Deployment Cheat Sheet
 
-##
+## Table of Contents
 
-1. After switching to the branch you'd like to deploy, create a new branch for deployment...
+  1. [Deployment Steps](#deployment-steps)
+  2. [Debugging](#debugging)
+  3. [Pushing Changes](#pushing-changes)
+  4. [Changing Migrations](#changing-steps)
+  5. [Switching Heroku Environments](#swithcing-heroku-environments)
+  6. [Deleting Heroku Apps](#deleting-heroku-apps)
+
+## Deployment Steps
+
+1. *__After__ switching to the branch you'd like to deploy*, create a new branch for deployment...
 
 ```bash
  $ git checkout -b deployment
@@ -11,7 +20,7 @@
 2. Add the following line to the bottom of your Gemfile to add the `rails_12factor` dependency to the `production` environment...
 
 ```rb
-gem "rails_12factor", group: :production
+gem 'rails_12factor', group: :production
 ```
 
 ```bash
