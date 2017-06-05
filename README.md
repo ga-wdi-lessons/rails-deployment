@@ -61,7 +61,7 @@ If we need to change configuration information, we can set configuration variabl
 
 ## Resources
   - [Rails Asset Pipeline](asset-pipeline.md)
-  - [Getting Started Deploying Rails on Heroku](ttps://devcenter.heroku.com/articles/getting-started-with-rails5)
+  - [Getting Started Deploying Rails on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails5)
   - [The Twelve-Factor App](http://12factor.net)
 
 ## Deployment Screencasts
