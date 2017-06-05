@@ -59,3 +59,7 @@ Each environment has a different set of configurations, things that vary dependi
     <li> your CSS / JS *will* be combined into one file for  performance</li>
   </ul>
 </details>
+
+### 12 Factor
+
+12 Factor is a set of strong guidelines designed by Heroku for building apps that deploy and scale more easily and predictably. Spend 10 minutes reading through [this explanation of what characteristics a 12 Factor app has](http://www.clearlytech.com/2014/01/04/12-factor-apps-plain-english/).
