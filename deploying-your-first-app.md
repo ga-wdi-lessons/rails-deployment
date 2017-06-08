@@ -13,7 +13,7 @@ If you decide to deploy tunr, run the following commands...
   ```bash
    $ git clone git@git.generalassemb.ly:ga-wdi-exercises/tunr-rails-5.git
    $ cd tunr-rails-5
-   $ git checkout views-solutions-controllers
+   $ git checkout views-controllers-solution
    $ git checkout -b deploying
   ```
 
