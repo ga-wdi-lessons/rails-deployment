@@ -22,11 +22,11 @@ Deployment is the act of putting an app up on one or more internet-connected ser
 
 There are generally a few things we need for an app to be properly deployed:
 
-* **server** - the server(s) must be on and connected to the internet
-* **services** - the server must be running the correct services (web, database, email, etc)
-* **dependencies** - the server(s) must have the proper dependencies installed (e.g. ruby, our gems, postgres, etc)
-* **executed code** - we must get our code onto the server and run it
-* **configuration** - we must configure our running app with respect to its deployment environment
+  * **server** - the server(s) must be on and connected to the internet
+  * **services** - the server must be running the correct services (web, database, email, etc)
+  * **dependencies** - the server(s) must have the proper dependencies installed (e.g. ruby, our gems, postgres, etc)
+  * **executable code** - we must get our code onto the server and be able to run it
+  * **configuration** - we must configure our running app with respect to its deployment environment
 
 ### Deployment Approaches
 
