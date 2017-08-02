@@ -18,6 +18,8 @@ Deployment is the act of putting an app up on one or more internet-connected ser
 
 ## About Deployment
 
+> What is deployment? What changes in an application when it is deployed?
+
 ### Requirements for Deploying
 
 There are generally a few things we need for an app to be properly deployed:
@@ -50,10 +52,6 @@ Today, we'll be using a service called Heroku to deploy our apps, because it mak
 ## [You Do: Read through Rails Environments](about-environments.md)
 
 > Start by reading about environments. We've been using the `development` environment by default, now we'll look at other environments, particularly `production`.
-
-## [You Do: Read through Deployment](about-deployment.md)
-
-> What is deployment? What changes in an application when it is deployed?
 
 ## [You Do: Deploying to Heroku](deploying-your-first-app.md)
 
