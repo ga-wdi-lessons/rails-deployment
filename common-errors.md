@@ -20,11 +20,11 @@ Make sure you create your app with `rails new my-app-name -d postgresql`.
 
 This includes the `pg` gem for you. If you forget the `-d postgresql`, Rails will default to using SQLite3 for your database. This saves data in a file called `development.sqlite3` in your app's `db` folder.
 
-Heroku rejects apps that use SQLite3: you can't upload them to Heroku. This is because Heroku erases your server whenever it goes to sleep, due to its ephemeral file system. The only stuff that will survive the erasing is whatever is tracked with Git.
+Heroku rejects apps that use SQLite3: you can't upload them to Heroku. This is because Heroku erases your server whenever it goes to sleep, due to its ephemeral file system. When the server sleeps, Heroku keeps the files tracked by git, and the PostgreSQL database, and erases everything else.
 
 Presumably, your users are going to be saving lots of data to your database which is *not* going to be tracked by Git. Therefore, if you're using SQLite3, all of your data will periodically get erased -- which would make for a very poor app!
 
-If you did forget `-d postgresql`, it's totally fixable  but can be annoying.
+If you did forget `-d postgresql`, it's totally fixable but can be annoying.
 
 [How to change your Rails app database from SQLite to PostgreSQL before deploying to Heroku](https://medium.com/@helenflam/how-to-change-your-rails-app-database-from-sqlite-to-postgresql-before-deploying-to-heroku-ae2acc25c7ac)
 

@@ -23,6 +23,11 @@ If you are deploying your Hogwarts Lab or your Game of Thrones lab, checkout the
  $ git checkout -b deploying
 ```
 
+## Create a Heroku account
+
+Go to [Heroku](https://www.heroku.com/) and create a new account! Make sure you don't forget your password!
+
+
 ## Installing the Heroku Toolbelt
 
 The Heroku Toolbelt is a command line app that enables us to create new apps to deploy, deploy code updates, and manage our server(s).
